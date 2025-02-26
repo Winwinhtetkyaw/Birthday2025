@@ -78,12 +78,12 @@ html {
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Poppins", serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 1px;
-  color: #000;
+  color: #333;
   background: transparent;
   text-rendering: optimizeLegibility;
 }
@@ -472,7 +472,8 @@ Container
   overflow-y: hidden;
 }
 
-.menu-sec, .header-logo-hide {
+.menu-sec,
+.header-logo-hide {
   display: none;
 }
 
@@ -514,7 +515,8 @@ Container
     font-size: 1rem;
   }
 
-  .inquiry-btn, .application-btn {
+  .inquiry-btn,
+  .application-btn {
     padding: 12px;
   }
 
@@ -544,7 +546,9 @@ Container
 }
 
 @media screen and (max-width:991px) {
-  .header-data, .header-modal-container {
+
+  .header-data,
+  .header-modal-container {
     display: none;
   }
 
@@ -590,7 +594,8 @@ Container
     border-top: 1px solid var(--route-border-gray);
   }
 
-  .route-link-arr, .accrodion-arr-rotate {
+  .route-link-arr,
+  .accrodion-arr-rotate {
     border-bottom: 1px solid var(--route-border-gray);
     padding: 17px 0;
     position: relative;
@@ -618,7 +623,8 @@ Container
     transform: translateY(-50%) rotate(-180deg);
   }
 
-  .accordion-arr-remove, .accordion-arr-remove::after {
+  .accordion-arr-remove,
+  .accordion-arr-remove::after {
     display: none;
   }
 
@@ -903,17 +909,18 @@ Container
   display: inline-block;
 }
 
-.footer-grid-three>.footer-text, .footer-grid-four>.footer-text {
+.footer-grid-three>.footer-text,
+.footer-grid-four>.footer-text {
   display: inline-block;
 }
 
-.t-container.over-footer{
-    bottom: 20px;
+.t-container.over-footer {
+  bottom: 20px;
 }
 
 .t-container {
-    right: 15px;
-    bottom: 85px;
+  right: 15px;
+  bottom: 85px;
 }
 
 .t-container.changeBlack>.top-txt>.to-top-text {
@@ -966,7 +973,7 @@ Container
 
 
   /* To Top */
-  
+
 
   .to-top-text::before {
     width: 8px;
@@ -1016,9 +1023,11 @@ Container
   }
 }
 
-#aboutJapanWeek,#historyJapanWeek,#introductionVideo{
-    height: 100px;
-    margin-top: -100px;
+#aboutJapanWeek,
+#historyJapanWeek,
+#introductionVideo {
+  height: 100px;
+  margin-top: -100px;
 }
 
 /* Footer Ends */
@@ -1093,65 +1102,68 @@ Container
 
 
 /* Two Flowers Blue Title  */
-.outline-overview-title{
-    font-family: "Noto Serif JP", serif;
-    font-size: 3.2rem;
-    font-weight: 500;
-    color: var(--primary-blue);
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    display: inline-block;
+.outline-overview-title {
+  font-family: "Noto Serif JP", serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--primary-blue);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
 }
 
-.outline-overview-title::before,.outline-overview-title::after{
-    content: "";
-    width: 24px;
-    height: 24px;
+.outline-overview-title::before,
+.outline-overview-title::after {
+  content: "";
+  width: 24px;
+  height: 24px;
 }
 
-.outline-overview-title::before{
-    background: url(/assets/img/about/outline/overview_title_flower.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -38px;
+.outline-overview-title::before {
+  background: url(/assets/img/about/outline/overview_title_flower.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -38px;
 }
 
-.outline-overview-title::after{
-    content: "";
-    width: 24px;
-    height: 24px;
-    background: url(/assets/img/about/outline/overview_title_flower.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -38px;
+.outline-overview-title::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(/assets/img/about/outline/overview_title_flower.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -38px;
 }
 
 @media screen and (max-width: 768px) {
-    .outline-overview-title{
-        font-family: "Noto Serif JP", serif;
-        font-size: 2rem;
-    }
+  .outline-overview-title {
+    font-family: "Noto Serif JP", serif;
+    font-size: 2rem;
+  }
 
-    .outline-overview-title::before,.outline-overview-title::after{
-        width: 12px;
-        height: 12px;
-    }
+  .outline-overview-title::before,
+  .outline-overview-title::after {
+    width: 12px;
+    height: 12px;
+  }
 
-    .outline-overview-title::before{
-        left: -22px;
-    }
+  .outline-overview-title::before {
+    left: -22px;
+  }
 
-    .outline-overview-title::after{
-        right: -22px;
-    }
+  .outline-overview-title::after {
+    right: -22px;
+  }
 }
+
 /* Two Flowers Blue Title end */
