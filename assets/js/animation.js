@@ -1,6 +1,6 @@
 var animationOne = bodymovin.loadAnimation({
     container: document.getElementById("animation-one"),
-    path: "/assets/animation-json/birthday-animation-one.json",
+    path: "../assets/animation-json/birthday-animation-one.json",
     renderer: "svg",
     loop: true,
     autoplay: true,
