@@ -25,3 +25,21 @@ function addAnimation() {
         });
     });
 }
+// Img click Model
+$(document).ready(function () {
+    $(".img-div img").click(function () {
+        var imgSrc = $(this).attr("src"); // Get clicked image source
+        $("#modalImage").attr("src", imgSrc); // Set modal image source
+        $("#imageModal").fadeIn(); // Show modal
+    });
+
+    $(".close").click(function () {
+        $("#imageModal").fadeOut(); // Hide modal when close button is clicked
+    });
+
+    $("#imageModal").click(function (e) {
+        if (e.target === this) {
+            $(this).fadeOut(); // Hide modal when clicking outside the image
+        }
+    });
+});
