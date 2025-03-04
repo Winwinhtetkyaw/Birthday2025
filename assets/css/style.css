@@ -1,3 +1,149 @@
+@charset "utf-8";
+
+:root {
+    font-size: 10px;
+    /* white color */
+    --primary-white: #ffffff;
+    --secondary-white: #f4f4f4;
+    --nude-white: #ea5e02;
+    --light-white: #e0e0e0;
+    --medium-white: #d1d1d1;
+    /* Black color */
+    --primary-black: #000000;
+    --secondary-black: #2d3236;
+    --deep-black: #1a1311;
+    --medium-black: #211A18;
+    /* Gray color */
+    --primary-gray: #9a9696;
+    --secondary-gray: #848484;
+    --nude-gray: #cccccc;
+    --light-gray: #bfbfbf;
+    --medium-gray: #919191;
+    --dark-gray: #707070;
+    --deep-gray: #5d5d5d;
+    --route-link-gray: #B5B5B5;
+    --route-border-gray: #D9D9D9;
+    --black-gray: #959393;
+    --footer-gray: #cbcbcb;
+    --header-modal-bg: #bab4b4;
+    --circle-three-hover: #656565;
+    --circle-three-hover-sp: #828282;
+    --third-gray: #adadad;
+    --third-secondary-gray: #dbdbdb;
+    --circle-three-hover: #656565;
+    --circle-three-hover-sp: #828282;
+    --third-gray: #adadad;
+    --table-gray: #F5F5F5;
+    /* Green color */
+    --primary-green: #46836e;
+    --nude-green: #abcca5;
+    /* Orange color */
+    --primary-orange: #eb5e03;
+    --secondary-orange: #fc0000;
+    --nude-orange: #ea5e02;
+    --light-orange: #f57b2c;
+    --entry-form-body-color: #FEF8F0;
+    --deep-orange: #ff0000;
+    --dark-orange: #c60000;
+    --black-orange: #d50b0b;
+    /* Pink color */
+    --primary-pink: #f2b595;
+    --secondary-pink: #f3dab7;
+    --nude-pink: #f1b595;
+    --light-pink: #f8f5e5;
+    --medium-pink: #fce9cf;
+    --background-pink: #F8F3EC;
+    /* Blue color */
+    --primary-blue: #4C6291;
+    --secondary-blue: #4b6291;
+    --nude-blue: #a7bdd6;
+    --light-blue: #a6bcd5;
+    --icy-blue: #bbc1cc;
+    --medium-blue: #d6d3d3;
+    --deep-blue: #083484;
+    --introduction-blue: #7084AF;
+    --pdf_icon_bgc: #4E6392;
+    /* Yellow color */
+    --primary-yellow: #F9FF58;
+    --light-yellow: #FBF9F2;
+}
+
+.background-pink {
+    background-color: var(--background-pink);
+}
+
+html {
+    text-rendering: optimizeLegibility !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #333;
+    background: transparent;
+    text-rendering: optimizeLegibility;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+.tel {
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .tel {
+        pointer-events: auto;
+    }
+}
+
+/* ===============================
+Text align
+=============================== */
+.txt-left {
+    text-align: left;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .txt-left-sp {
+        text-align: left;
+    }
+
+    .txt-center-sp {
+        text-align: center;
+    }
+
+    .txt-right-sp {
+        text-align: right;
+    }
+}
+
+/* ///////////////////// */
 .container {
     max-width: 1140px;
     padding: 0 20px;
@@ -8,3 +154,84 @@
     width: 200px;
     height: 200px;
 }
+
+.img-div {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scroller-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.scroller_inner {
+    display: flex;
+    gap: 1rem;
+    padding-block: 1rem;
+}
+
+/* ==================== data scroller ================= */
+.scroller[data-animated=true] {
+    overflow: hidden;
+    /* -webkit-mask: linear-gradient(transparent, white);
+    mask: linear-gradient(transparent, white); */
+
+}
+
+.scroller[data-animated=true] .scroller_inner {
+    width: max-content;
+    animation: scroll var(--animation-direction, forwards) 50s linear infinite;
+}
+
+.scroller[data-direction="right"] {
+    --animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+    --animation-direction: forwards;
+    /* custom property*/
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+.scroller[data-animated=true] .scroller_inner.scroll-y {
+    height: max-content;
+    animation: scrollingy var(--animation-direction, forwards) 50s linear infinite;
+}
+
+.scroller[data-direction="up"] {
+    --animation-direction: forwards;
+    /* custom property*/
+}
+
+.scroller[data-direction="down"] {
+    --animation-direction: reverse;
+}
+
+@keyframes scrollingy {
+    from {
+        transform: translateY(0);
+        /* Start at the top */
+    }
+
+    to {
+        transform: translateY(calc(-50% - 0.5rem));
+        /* Scroll to the end of the content */
+    }
+}
+
+/* ================ data scroller ================== */

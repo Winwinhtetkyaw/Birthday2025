@@ -24,14 +24,30 @@
     <div id="animation-one"></div>
     <div id="animation-three"></div>
     <div id="animation-four"></div>
-    <div class="img"></div>
 
-    <button class="btn">click</button>
+    <div class="scroller scroller-container" data-direction="left">
+        <ul class="tag-list scroller_inner">
+            <li class="img-div"><img src="./assets/img/common/backgroundone.webp" alt="img one"></li>
+            <li class="img-div"><img src="./assets/img/common/backgroundone.webp" alt="img one"></li>
+            <li class="img-div"><img src="./assets/img/common/backgroundone.webp" alt="img one"></li>
+            <li class="img-div"><img src="./assets/img/common/backgroundone.webp" alt="img one"></li>
+            <li class="img-div"><img src="./assets/img/common/backgroundone.webp" alt="img one"></li>
+        </ul>
+    </div>
+
+    <div class="scroller scroller-container" data-direction="right">
+        <ul class="tag-list scroller_inner">
+            <li class="img-div"><img src="./assets/img/common/backgroundone.webp" alt="img one"></li>
+            <li class="img-div"><img src="./assets/img/common/backgroundone.webp" alt="img one"></li>
+            <li class="img-div"><img src="./assets/img/common/backgroundone.webp" alt="img one"></li>
+            <li class="img-div"><img src="./assets/img/common/backgroundone.webp" alt="img one"></li>
+            <li class="img-div"><img src="./assets/img/common/backgroundone.webp" alt="img one"></li>
+        </ul>
+    </div>
 </body>
 <script src="./assets/js/jquery-3.7.1.min.js"></script>
 <script src="./assets/js/jquery.matchHeight.js"></script>
 <script src="./assets/js/lottie.min.js"></script>
-<script src="./assets/js/animation.js"></script>
 <script src="./assets/js/common.js"></script>
 <script>
     var animationOne = bodymovin.loadAnimation({
