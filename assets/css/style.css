@@ -237,6 +237,7 @@ Text align
 /* ================ data scroller ================== */
 /* Model box */
 .modal {
+    cursor: pointer;
     display: none;
     position: fixed;
     z-index: 1000;
@@ -247,11 +248,24 @@ Text align
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal-content {
-    margin: 10% auto;
+.model-img-container {
+    margin: 0 auto;
     display: block;
-    max-width: 80%;
+    max-width: 90%;
+    margin-top: 100px;
     max-height: 80%;
+    overflow: hidden;
+    /* object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.modal-content {
+    cursor: auto;
+    object-fit: cover;
+    object-position: center;
 }
 
 .close {
