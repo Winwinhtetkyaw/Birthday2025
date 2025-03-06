@@ -37,6 +37,12 @@ $(document).ready(function () {
         $("#imageModal").fadeOut(); // Hide modal when close button is clicked
     });
 
+    $(".model-img-container").click(function (e) {
+        if (e.target === this) {
+            $("#imageModal").fadeOut(); // Hide modal when close button is clicked
+        }
+    });
+
     $("#imageModal").click(function (e) {
         if (e.target === this) {
             $(this).fadeOut(); // Hide modal when clicking outside the image
