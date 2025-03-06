@@ -169,8 +169,12 @@ Text align
     object-fit: cover;
 }
 
+.img-div.seventeen img {
+    object-position: top;
+}
+
 .scroller-container {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -190,7 +194,7 @@ Text align
 
 .scroller[data-animated=true] .scroller_inner {
     width: max-content;
-    animation: scroll var(--animation-direction, forwards) 50s linear infinite;
+    animation: scroll var(--animation-direction, forwards) 100s linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -210,7 +214,7 @@ Text align
 
 .scroller[data-animated=true] .scroller_inner.scroll-y {
     height: max-content;
-    animation: scrollingy var(--animation-direction, forwards) 50s linear infinite;
+    animation: scrollingy var(--animation-direction, forwards) 100s linear infinite;
 }
 
 .scroller[data-direction="up"] {
